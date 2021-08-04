@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="\..\static\css\app.css">
+    <script src="/static/js/app.js"></script>
+  </head>
+
+  <body>
+    <div class="login-box" >
+      <form  method="post" action="{{ url_for('solution') }}">
+          <h1>Calculate Sludge volume</h1>  
+    
+          <div class="user-box">
+          Value of Biomass:
+          <input type="number" step="0.01" name="A-value" id="A-value" placeholder="type here " autocomplete="off" required />
+          <br>
+          </div>
+          
+          <div class="user-box">
+          Value of Density:
+          <input type="number" step="0.01" name="B-value" id="B-value" placeholder="type here " autocomplete="off" required />
+          <br>
+          </div>
+    
+          <div class="user-box">
+          Value of Aerators:
+          <input type="number" step="0.01" name="C-value" id="C-value" placeholder="type here " autocomplete="off" required />
+          <br>
+          </div>
+    
+          <div class="user-box">
+          Value of FCR:
+          <input type="number" step="0.01" name="D-value" id="D-value" placeholder="type here " autocomplete="off" required />
+          <br>
+          </div>
+    
+          <input class="submit" type="submit">
+    
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            
+    
+        </input>
+        </form>
+      </div>
+  </body>
+
+</html>
